@@ -7,13 +7,13 @@ Este repositório contém uma simulação didática de um Security Operations Ce
 ## Estrutura do Projeto
 
 - **scripts/** → Scripts em Python para análise de logs e eventos de segurança.  
-  - [analisar_eventos.py](scripts/analisar_eventos.py)  
+  - analisar_eventos.py  
 - **docs/** → Documentação e playbooks de resposta a incidentes.  
-  - [playbook_incidentes.md](docs/playbook_incidentes.md)  
+  - playbook_incidentes.md  
 - **relatorios/** → Relatórios simulados de incidentes.  
-  - [relatorio_exemplo.md](relatorios/relatorio_exemplo.md)  
+  - relatorio_exemplo.md  
 - **exemplos_logs/** → Exemplos de logs para simulação e testes.  
-  - [log_exemplo.txt](exemplos_logs/log_exemplo.txt)  
+  - log_exemplo.txt  
 
 ---
 
