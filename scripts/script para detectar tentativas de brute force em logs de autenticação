@@ -1,0 +1,22 @@
+# scripts/detect_bruteforce.py
+from collections import Counter
+
+def detectar_bruteforce(logs):
+    tentativas = Counter()
+    for linha in logs:
+        usuario = linha.split()[1]  # supondo que o log tenha "timestamp usuario falha"
+        tentativas[usuario] += 1
+    
+    suspeitos = [u for u, c in tentativas.items() if c > 5]
+    return suspeitos
+
+if __name__ == "__main__":
+    exemplo_logs = [
+        "2026-06-19 user1 falha",
+        "2026-06-19 user1 falha",
+        "2026-06-19 user1 falha",
+        "2026-06-19 user1 falha",
+        "2026-06-19 user1 falha",
+        "2026-06-19 user1 falha",
+    ]
+    print("Usuários suspeitos:", detectar_bruteforce(exemplo_logs))
